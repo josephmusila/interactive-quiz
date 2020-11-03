@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <h3>QUIZ</h3>
+        <div id="bar">
+            <div id="progress"></div>
+        </div>
+        <div id="scoreline" aria-placeholder="scoreline">
+         
+        </div>
+        <div id="questions">
+            <div id="q1">
+                <P>which is an animal</P>
+                <label >
+                    <input type="radio" name="animal" id="cat">
+                    cat
+                </label>
+                <label for="animal">
+                    <input type="radio" name="animal">
+                    fish
+                </label>
+                <label for="animal">
+                    <input type="radio" name="animal">
+                    bird
+                </label>
+                <label for="animal">
+                    <input type="radio" name="animal">
+                    hen
+                </label>
+                <button id="next">next</button>
+            </div>
+
+        </div>
+
+        <template id="qq2">
+            <div id="q2">
+                <P>how many wheels does a car have</P>
+                <label for="wheels">
+                    <input type="radio" name="wheels">
+                    0
+                </label>
+                <label for="wheels">
+                    <input type="radio" name="wheels">
+                    6
+                </label>
+                <label for="wheels">
+                    <input type="radio" name="wheels">
+                    2
+                </label>
+                <label for="wheels">
+                    <input type="radio" name="wheels" id="four">
+                    4
+                </label>
+                <button id="next2">next</button>
+            </div>
+            <script>
+              document.getElementById("next2").addEventListener("click", qu2);
+            </script>
+        </template>
+        <template id="q3">
+            <div id="qq3">
+                <P>give the current uefa title holder</P>
+                <label for="team">
+                    <input type="radio" name="team">
+                  Liverpool
+                </label>
+                <label for="team">
+                    <input type="radio" name="team">
+                    Real Madrid
+                </label>
+                <label for="team">
+                    <input type="radio" name="team" id="bayern">
+                    Bayern Munich
+                </label>
+                <label for="team">
+                    <input type="radio" name="team" >
+                    Barcelona
+                </label>
+                <button id="next3">next</button>
+            </div>
+            <script>
+                document.getElementById("next3").addEventListener("click",q3);
+            </script>
+        </template>
+        <template id="congrats">
+            <div id="con">
+                <p>Congratulations!! You have finished the test succesfuly</p>
+            </div>
+        </template>
+    </div>
+    <script src="index.js" assync></script>
+</body>
+
+</html>
